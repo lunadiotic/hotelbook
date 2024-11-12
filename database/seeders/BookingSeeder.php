@@ -29,7 +29,7 @@ class BookingSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
 
-            // Booking kedua: Pending dan belum dibayar, payment_due_at dalam 60 menit
+            // Booking kedua: Pending dan belum dibayar, payment_due_at dalam 1 menit
             [
                 'user_id' => 3,
                 'room_id' => 2,
@@ -38,7 +38,7 @@ class BookingSeeder extends Seeder
                 'total_price' => 2000000.00,
                 'status' => 'pending',
                 'payment_status' => 'unpaid',
-                'payment_due_at' => Carbon::now()->addMinutes(60),  // Batas pembayaran 60 menit setelah booking
+                'payment_due_at' => Carbon::now()->addMinutes(1),  // Batas pembayaran 1 menit setelah booking
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
@@ -66,12 +66,12 @@ class BookingSeeder extends Seeder
                 'total_price' => 2500000.00,
                 'status' => 'canceled',
                 'payment_status' => 'unpaid',
-                'payment_due_at' => Carbon::now()->addMinutes(60),  // Masih dalam waktu pembayaran
+                'payment_due_at' => Carbon::now()->addMinutes(1),  // Masih dalam waktu pembayaran
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
 
-            // Booking kelima: Pending dan belum dibayar, payment_due_at dalam 60 menit
+            // Booking kelima: Pending dan belum dibayar, payment_due_at dalam 1 menit
             [
                 'user_id' => 4,
                 'room_id' => 5,
@@ -80,7 +80,7 @@ class BookingSeeder extends Seeder
                 'total_price' => 2200000.00,
                 'status' => 'pending',
                 'payment_status' => 'unpaid',
-                'payment_due_at' => Carbon::now()->addMinutes(60),  // Batas pembayaran 60 menit setelah booking
+                'payment_due_at' => Carbon::now()->addMinutes(1),  // Batas pembayaran 1 menit setelah booking
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
